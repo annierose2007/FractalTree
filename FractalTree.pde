@@ -1,5 +1,5 @@
 private double fractionLength = 0.8;
-private int smallestBranch = 10;
+private int smallestBranch = 5;
 private double branchAngle = 0.2;
 private int colormode = 0;
 
