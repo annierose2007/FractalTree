@@ -5,7 +5,7 @@ private int colormode = 0;
 
 
 public void setup(){   
-  size(500,500);    
+  size(800,600);    
   noLoop(); 
 } 
 
