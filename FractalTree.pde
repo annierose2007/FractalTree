@@ -9,7 +9,7 @@ public void setup(){
 } 
 
 public void draw(){   
-  background(0);
+  background(255);
   noStroke();
   fill(30,120,20);
   rect(0,550,800,50);
