@@ -28,7 +28,7 @@ public void drawBranches(int x,int y, double branchLength, double angle){
   int endX2 = (int)(branchLength*Math.cos(angle2) + x);
   int endY2 = (int)(branchLength*Math.sin(angle2) + y);
   if(colormode==0)
-    stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+    stroke((int)(Math.random()*255),0,0);
   else if(colormode==1)
     stroke(mouseX/2,mouseY/2,(int)(Math.random()*150)+105);
   line(x,y,endX1,endY1);
