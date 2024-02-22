@@ -11,8 +11,6 @@ public void setup(){
 public void draw(){   
   background(255);
   noStroke();
-  fill(30,120,20);
-  rect(0,550,800,50);
   stroke(0,255,0);
   line(200,550,200,480);
   line(600,550,600,480);
