@@ -1,11 +1,11 @@
 private double fractionLength = 0.8;
-private int smallestBranch = 15;
+private int smallestBranch = 20;
 private double branchAngle = 0.2;
 private int colormode = 0;
 
 
 public void setup(){   
-  size(800,600);    
+  size(500,500);    
   noLoop(); 
 } 
 
