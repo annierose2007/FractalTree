@@ -16,8 +16,6 @@ public void draw(){
   line(200,550,200,480);
   line(600,550,600,480);
   line(400,550,400,450);
-  drawBranches(200,480,60,3*Math.PI/2);
-  drawBranches(600,480,60,3*Math.PI/2);
   drawBranches(400,450,86,3*Math.PI/2);
 } 
 
