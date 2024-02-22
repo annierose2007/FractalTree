@@ -38,4 +38,13 @@ public void drawBranches(int x,int y, double branchLength, double angle){
     drawBranches(endX2,endY2,branchLength*fractionLength,angle2);
   }
 }
+public void keyPressed(){
+  if(key=='r' && colormode==0){
+    colormode=1;
+    redraw();
+  }
+  else if(key=='r' && colormode==1){
+    colormode=0;
+    redraw();
+  }
 }
