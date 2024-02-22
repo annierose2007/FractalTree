@@ -1,6 +1,7 @@
 private double fractionLength = 0.8;
 private int smallestBranch = 10;
 private double branchAngle = 0.2;
+private int colormode = 0;
 
 
 public void setup(){   
@@ -27,6 +28,12 @@ public void drawBranches(int x,int y, double branchLength, double angle){
   int endY1 = (int)(branchLength*Math.sin(angle1) + y);
   int endX2 = (int)(branchLength*Math.cos(angle2) + x);
   int endY2 = (int)(branchLength*Math.sin(angle2) + y);
+ if(colormode==0){
+   stroke((int)(Math.random()*255),0,0);
+}
+ else if(colormode==1){
+   stroke(mouseX/2,mouseY/2,(int)(Math.random()*150)+105);
+}
   line(x,y,endX1,endY1);
   line(x,y,endX2,endY2);
   if(branchLength>smallestBranch){
@@ -34,4 +41,13 @@ public void drawBranches(int x,int y, double branchLength, double angle){
     drawBranches(endX2,endY2,branchLength*fractionLength,angle2);
   }
 }
+public void keyPressed(){
+ if(key=='r' && colormode==0){
+   colormode=1;
+   redraw();
+ }
+ else if(key=='r' && colormode==1){
+   colormode=0;
+   redraw();
+ }
 }
