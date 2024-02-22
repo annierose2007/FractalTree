@@ -1,5 +1,5 @@
 private double fractionLength = 0.8;
-private int smallestBranch = 5;
+private int smallestBranch = 15;
 private double branchAngle = 0.2;
 private int colormode = 0;
 
@@ -13,8 +13,6 @@ public void draw(){
   background(255);
   noStroke();
   stroke(255,0,0);
-  line(200,550,200,480);
-  line(600,550,600,480);
   line(400,550,400,450);
   drawBranches(400,450,86,3*Math.PI/2);
 } 
